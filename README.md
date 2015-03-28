@@ -67,4 +67,10 @@ I am interested in any failures you generate.
 
 J Adrian Zimmer
 jazimmer.net
+
+Intended future changes:  
+
+   simplify
+   change to Python 3.x
+   improve explanation of how it works
 '''
