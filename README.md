@@ -1,3 +1,7 @@
+#What:
+
+A class that implements an algorithm for finding isomorphisms between two undirected graphs.  Variations of this algorithm have been in my mind since I finished my Ph.D. thesis in graph theory 45 years ago.  My career deviated from graph theory but I have returned to this problem now and then.  I have not been able to find a variation I could prove correct and show is polynomial time.  This version is O(N<sup>3</sup>) but may report failure to know whether the two graphs are isomorphic.   It has not failed on the random graphs I have tried.  My randomization and testing programs are included for your examination.  It may be that a more systematic approach to finding a counter example would work where my randomized graphs have not.  It is quite apparent that I am not the person to do that or carry this line of thinking forward.
+
 #Usage:
 
 from Graph import Graph
@@ -52,25 +56,6 @@ gc.enable()
 checkIsomorphic( 
    gph1, gph2, isoAction, noIsoAction, failAction
 )
-
 '''
-Remark:  This algorithm is a variation of something I thought of
-decades ago after completing my Ph.D. thesis "Automorphisms of
-Graphs".  My career diverged from graph theorey but I returned
-to this algorithm from time to time attempting to find a poly
-time isomorphism checker -- one that I could prove correct.
-Needless to say I have not succeeded.  However, checkIsomorphic 
-should be correct when it doesn't report failure.  It runs
-in n**3 time and requires n**3 storage.
 
-I am interested in any failures you generate.
-
-J Adrian Zimmer
-jazimmer.net
-
-Intended future changes:  
-
-   simplify
-   change to Python 3.x
-   improve explanation of how it works
-'''
+[J Adrian Zimmer](http://www.jazimmer.net)
